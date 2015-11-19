@@ -20,7 +20,7 @@ import { Component, View } from 'angular2/angular2';
 	<h2>Technology Stack</h2>
 	<h3>Application</h3>
 	<ul>
-		<li>angular 2.0.0 alpha 45</li>
+		<li>angular 2.0.0 alpha 46</li>
 		<li>reflect-metadata</li>
 		<li>es6-shim</li>
 		<li>zone.js</li>
@@ -47,7 +47,7 @@ import { Component, View } from 'angular2/angular2';
 	`
 })
 export class HomeComponent {
-	private title: number;
+	private title: string;
 
 	constructor() {
 		this.title = 'Angular2 Seed Project';
