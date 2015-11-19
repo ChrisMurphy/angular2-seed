@@ -2,7 +2,7 @@ System.config({
   defaultJSExtensions: true,
   transpiler: "false",
   typescriptOptions: {
-    "typeCheck": false,
+    "typeCheck": true,
     "tsconfig": true
   },
   paths: {
