@@ -12,28 +12,33 @@
   "windows": {
     "command": "npm.cmd"
   },
+  "args": ["run", "--loglevel", "info"],
   "tasks": [
     {
       // Build task, Ctrl+Shift+B
       // "npm install --loglevel info"
       "taskName": "build",
+	  "suppressTaskName": true,
       "isBuildCommand": true,
-      "args": ["run", "--loglevel", "info"]
+      "args": ["build"]
     },
     {
       // "npm run setup"
       "taskName": "setup",
-	  "args": ["run", "--loglevel", "info"]
+	  "suppressTaskName": true,
+	  "args": ["setup"]
     },	
     {
       // "npm run development"
       "taskName": "development",
-	  "args": ["run", "--loglevel", "info"]
+	  "suppressTaskName": true,
+	  "args": ["development"]
     },
     {
       // "npm run production"
       "taskName": "production",
-	  "args": ["run", "--loglevel", "info"]
+	  "suppressTaskName": true,
+	  "args": ["production"]
     }	
   ]
 }
