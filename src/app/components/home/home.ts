@@ -48,7 +48,7 @@ import { Component, View } from 'angular2/angular2';
 })
 export class HomeComponent {
 	private title: string;
-
+	
 	constructor() {
 		this.title = 'Angular2 Seed Project';
 	}
