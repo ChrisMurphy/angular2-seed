@@ -14,8 +14,9 @@ module.exports = {
 	
 	server: {
 		development: {
-			port: 8080, // Set the server port. Defaults to 8080. 
-			root: "./src", // Set root directory that's being server. Defaults to cwd.   
+			port: 9000, // Set the server port. Defaults to 8080. 
+			root: "./src", // Set root directory that's being server. Defaults to cwd. 
+            mount: [['/node_modules', '../node_modules']] // Mount a directory to a route.  
 		},
 		production: {
 			port: 9090, // Set the server port. Defaults to 8080. 

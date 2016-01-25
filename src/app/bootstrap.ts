@@ -1,15 +1,13 @@
-/// <reference path="../typings/tsd.d.ts" />
-
-import 'zone.js';
+import 'zone.js/dist/zone.min.js';
 import 'reflect-metadata';
-import 'es6-shim';
 
-import { bootstrap, provide } from 'angular2/angular2';
+import { bootstrap } from 'angular2/platform/browser';
+import { provide } from 'angular2/core';
 import { ROUTER_PROVIDERS, LocationStrategy, HashLocationStrategy } from 'angular2/router';
 import { HTTP_PROVIDERS } from 'angular2/http';
-import { MyAppComponent } from 'app/components/my-app/my-app';
+import { Application } from './features/app/app';
 
-bootstrap(MyAppComponent, [
+bootstrap(Application, [
 	ROUTER_PROVIDERS,
 	HTTP_PROVIDERS,
 	provide(LocationStrategy, { useClass: HashLocationStrategy })

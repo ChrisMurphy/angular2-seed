@@ -4,7 +4,7 @@ var gulp = require('gulp'),
 	gulpSequence = require('gulp-sequence');
 
 gulp.task('production', 
-	gulpSequence('set-production','build', 'serve')
+	gulpSequence('set-production', 'build', 'serve')
 );
 
 gulp.task('development', ['serve']);

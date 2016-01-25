@@ -1,5 +1,5 @@
-# Angular2 Seed Project
-Starting point for learning  with a blank angular2 application
+# Angular 2 Seed Project
+Starting point for a blank Angular 2 application
 
 ## Usage
 
@@ -22,13 +22,11 @@ Starting point for learning  with a blank angular2 application
 ## Technology Stack
 
 ### Application
-* angular 2.0.0 alpha 46
-* reflect-metadata
-* es6-shim
-* zone.js
+* angular 2.0.0 beta 1
 * typescript
 
 ### Build and Dependecy Management
+* systemjs
 * jspm
 * gulp + plugins
 * live-server
