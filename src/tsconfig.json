@@ -9,6 +9,6 @@
     },
     "exclude": [
         "jspm_packages",
-        "node_modules"
+        "typings/browser"
     ]
 }

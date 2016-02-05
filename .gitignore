@@ -6,7 +6,7 @@ npm-debug.log
 **/jspm_packages/**
 
 ##Typings
-typings/**
+src/typings/**
 
 ##Distribution Code
 dist/**

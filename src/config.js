@@ -2,14 +2,14 @@ System.config({
   defaultJSExtensions: true,
   transpiler: false,
   typescriptOptions: {
-    "typeCheck": false, //until references can be resolved properly
+    "typeCheck": false,
     "tsconfig": true
   },
   paths: {
     "npm:*": "jspm_packages/npm/*",
-    "github:*": "jspm_packages/github/*",
+    "github:*": "jspm_packages/github/*"
   },
-  
+
   packages: {
     "app": {
       "main": "bootstrap",
