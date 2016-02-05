@@ -7,7 +7,8 @@
     "development": "gulp development",
     "production": "gulp production",
     "build": "gulp build",
-    "setup": "npm install -g live-server tsd && npm install && jspm install & tsd reinstall -s -o"
+    "postinstall": "jspm install && typings install",
+    "setup": "npm install -g live-server typings && npm install"
   },
   "repository": {
     "type": "git",
