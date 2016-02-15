@@ -22,7 +22,7 @@ Starting point for a blank Angular 2 application
 ## Technology Stack
 
 ### Application
-* angular 2.0.0 beta 1
+* angular 2.0.0 beta 6
 * typescript
 
 ### Build and Dependecy Management
