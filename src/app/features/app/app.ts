@@ -18,7 +18,7 @@ import { HomeComponent } from '../home/home';
 ])
 export class Application {
   public message: string;
-  
+
   constructor() {
     this.message = 'test';
   }

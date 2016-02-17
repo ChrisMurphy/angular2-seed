@@ -5,7 +5,7 @@ var gulp = require('gulp'),
     stylish = require('gulp-tslint-stylish');
 
 gulp.task('ts-lint', function(){
-      return gulp.src(['./**/*.ts', '!./node_modules/**', '!./src/jspm_packages/**', '!./typings/**'])
+      return gulp.src(['./src/**/*.ts', '!./node_modules/**', '!./src/jspm_packages/**', '!./src/typings/**'])
         .pipe(tslint())
         .pipe(tslint.report(stylish, {
             emitError: true,
