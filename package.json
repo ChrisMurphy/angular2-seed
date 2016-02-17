@@ -11,7 +11,9 @@
     "postinstall": "jspm install && typings.cmd",
     "setup": "npm install -g live-server typings && npm install",
     "test": "node node_modules/karma/bin/karma start karma.conf.js",
-    "coverage": "node_modules/.bin/remap-istanbul -i coverage/coverage-final.json -o coverage -t html"
+    "coverage": "node_modules/.bin/remap-istanbul -i coverage/coverage-final.json -o coverage -t html",
+    "webdriver-start": "webdriver-manager start",
+    "webdriver-update": "webdriver-manager update"
   },
   "repository": {
     "type": "git",
@@ -44,6 +46,7 @@
     "gulp-tslint-stylish": "^1.1.1",
     "gulp-useref": "^1.3.0",
     "jasmine-core": "^2.4.1",
+    "jasmine-spec-reporter": "^2.4.0",
     "jspm": "^0.16.24",
     "karma": "^0.13.21",
     "karma-chrome-launcher": "^0.2.2",
