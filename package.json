@@ -9,8 +9,9 @@
     "production": "gulp production",
     "build": "gulp build",
     "postinstall": "jspm install && typings.cmd",
-    "setup": "npm install -g live-server typings karma && npm install",
-    "test": "karma start karma.conf.js"
+    "setup": "npm install -g live-server typings && npm install",
+    "test": "node node_modules/karma/bin/karma start karma.conf.js",
+    "coverage": "node_modules/.bin/remap-istanbul -i coverage/coverage-final.json -o coverage -t html"
   },
   "repository": {
     "type": "git",
@@ -22,13 +23,12 @@
     "url": "https://github.com/ChrisMurphy/angular2-seed/issues"
   },
   "keywords": [
-    "web",
-    "frontend",
-    "html5",
-    "angularjs",
     "angular2",
     "typescript",
-    "es6"
+    "seed",
+    "karma",
+    "jasmine",
+    "coverage"
   ],
   "homepage": "https://github.com/ChrisMurphy/angular2-seed",
   "devDependencies": {
@@ -52,6 +52,7 @@
     "karma-jspm": "^2.0.2",
     "live-server": "^0.8.1",
     "reflect-metadata": "0.1.2",
+    "remap-istanbul": "^0.5.1",
     "require-dir": "^0.3.0",
     "rxjs": "5.0.0-beta.0",
     "systemjs": "^0.19.21",

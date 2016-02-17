@@ -22,11 +22,12 @@ module.exports = function (config) {
         'typings/**/*.*',
         'tsconfig.json'
       ]
-    },  
+    },
 
     // preprocess matching files before serving them to the browser
-    // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
+    // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor    
     preprocessors: {
+      //'app/**/*!(*.spec).ts': ['coverage'] // Source files that you wanna generate coverage for. Do not include tests or libraries (Files used by Istanbul)
     },
 
     proxies: { // avoid Karma's ./base virtual directory
@@ -39,7 +40,7 @@ module.exports = function (config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    reporters: ['progress', 'dots'],
 
 
     // web server port
@@ -63,10 +64,24 @@ module.exports = function (config) {
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     browsers: ['Chrome'],
 
+    // Karma plugins loaded
+    plugins: [
+      'karma-jasmine',
+      'karma-jspm',
+      'karma-coverage',
+      'karma-chrome-launcher'
+    ],
+
+    // coverageReporter: {
+    //   reporters: [
+    //     { type: 'json', subdir: '../../coverage', file: 'coverage-final.json' }
+    //   ]
+    // },
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
     singleRun: true
+
 
   })
 }

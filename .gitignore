@@ -10,3 +10,6 @@ src/typings/**
 
 ##Distribution Code
 dist/**
+
+##Covergae Report
+coverage/**
