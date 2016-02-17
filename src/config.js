@@ -1,6 +1,7 @@
 System.config({
+  baseURL: "/",
   defaultJSExtensions: true,
-  transpiler: false,
+  transpiler: "typescript",
   typescriptOptions: {
     "typeCheck": true,
     "tsconfig": true,
@@ -26,6 +27,17 @@ System.config({
           "loader": "ts"
         }
       }
+    }
+  },
+
+  meta: {
+    "angular2/core": {
+      "deps": [
+        "es6-shim",
+        "zone.js",
+        "reflect-metadata",
+        "rxjs"
+      ]
     }
   },
 

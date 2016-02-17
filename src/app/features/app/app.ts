@@ -17,4 +17,9 @@ import { HomeComponent } from '../home/home';
 	{ path: '/Home', component: HomeComponent, name: 'Home' }
 ])
 export class Application {
+  public message: string;
+  
+  constructor() {
+    this.message = 'test';
+  }
 }
