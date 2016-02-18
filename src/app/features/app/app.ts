@@ -4,9 +4,7 @@ import { ROUTER_DIRECTIVES, RouteConfig } from 'angular2/router';
 import { HomeComponent } from '../home/home';
 
 @Component({
-	selector: 'app'
-})
-@View({
+	selector: 'app',
 	template: `
 	<router-outlet></router-outlet>
 	`,

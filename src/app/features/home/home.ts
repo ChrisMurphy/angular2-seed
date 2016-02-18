@@ -1,9 +1,7 @@
 import { Component, View } from 'angular2/core';
 
 @Component({
-	selector: 'home'
-})
-@View({
+	selector: 'home',
 	template: `
 	<h1>{{ title }}</h1>
 	`
