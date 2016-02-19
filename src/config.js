@@ -31,12 +31,13 @@ System.config({
   },
 
   meta: {
-    "angular2/core": {
+    "angular2/*": {
       "deps": [
-        "es6-shim",
-        "zone.js",
-        "reflect-metadata",
-        "rxjs"
+        "reflect-metadata",  
+        "rxjs", 
+        "es6-shim", 
+        "es6-promise", 
+        "zone.js"
       ]
     }
   },
