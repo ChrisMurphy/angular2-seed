@@ -40,9 +40,3 @@ Has integrated tasks if using Visual Studio Code
 2. Type run and select "Task: Run Task"
 
 3. Select from "build", "development", "production" or "setup" (relates to usage description above)
-
-Has integrated tasks if using WebStorm
-
-1. Got to the "Run" menu
-
-2. Select from "build", "development", "production" or "setup" (relates to usage description above)
