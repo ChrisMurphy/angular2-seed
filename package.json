@@ -8,10 +8,11 @@
     "development": "gulp development",
     "production": "gulp production",
     "build": "gulp build",
-    "postinstall": "jspm install && typings.cmd",
-    "setup": "npm install -g live-server typings protractor karma-cli",
+    "postinstall": "jspm install && call tools/utils/install-typings",
+    "setup": "npm install -g ts-node live-server typings protractor karma-cli",
     "test": "karma start karma.conf.js",
     "e2e": "npm run webdriver-update && protractor protractor.conf.js",
+    "e2e.ci": "node tools/utils/concurrent-e2e-task",
     "coverage": "node_modules/.bin/remap-istanbul -i coverage/coverage-final.json -o coverage -t html",
     "webdriver-start": "webdriver-manager start",
     "webdriver-update": "webdriver-manager update"
@@ -61,6 +62,7 @@
     "require-dir": "^0.3.0",
     "rxjs": "5.0.0-beta.0",
     "systemjs": "^0.19.21",
+    "ts-node": "^0.5.5",
     "typescript": "^1.7.5",
     "zone.js": "0.5.14"
   },
