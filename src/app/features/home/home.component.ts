@@ -6,7 +6,7 @@ import { Component } from 'angular2/core';
 	<h1>{{ title }}</h1>
 	`
 })
-export class HomeComponent {
+export class Home {
 	private title: string;
 
 	constructor() {

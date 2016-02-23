@@ -1,7 +1,7 @@
 import { Component } from 'angular2/core';
 import { ROUTER_DIRECTIVES, RouteConfig } from 'angular2/router';
 
-import { HomeComponent } from '../home/home';
+import { Home } from '../home/home.component';
 
 @Component({
 	selector: 'app',
@@ -12,9 +12,9 @@ import { HomeComponent } from '../home/home';
 })
 @RouteConfig([
 	{ path: '/', redirectTo: ['/Home'] },
-	{ path: '/Home', component: HomeComponent, name: 'Home' }
+	{ path: '/Home', component: Home, name: 'Home' }
 ])
-export class Application {
+export class App {
   public message: string;
 
   constructor() {

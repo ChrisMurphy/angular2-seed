@@ -1,15 +1,15 @@
 /// <reference path="../../../typings/browser.d.ts" />
 import {it, describe, expect, beforeEach} from 'angular2/testing';
-import {Application} from './app';
+import {App} from './app.component';
 
 describe('Application', () => {
-    let application:Application;
+    let app:App;
 
     beforeEach(() => {
-        application = new Application();
+        app = new App();
     });
 
     it('should have a message property', () => {
-        expect(application.message).toBe('test');
+        expect(app.message).toBe('test');
     });
 });
