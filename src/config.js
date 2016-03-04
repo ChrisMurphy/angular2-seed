@@ -43,7 +43,7 @@ System.config({
   },
 
   map: {
-    "angular2": "npm:angular2@2.0.0-beta.7",
+    "angular2": "npm:angular2@2.0.0-beta.8",
     "es6-shim": "github:es-shims/es6-shim@0.33.13",
     "reflect-metadata": "npm:reflect-metadata@0.1.2",
     "rxjs": "npm:rxjs@5.0.0-beta.0",
@@ -86,7 +86,7 @@ System.config({
     "github:jspm/nodelibs-vm@0.1.0": {
       "vm-browserify": "npm:vm-browserify@0.0.4"
     },
-    "npm:angular2@2.0.0-beta.7": {
+    "npm:angular2@2.0.0-beta.8": {
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "es6-promise": "npm:es6-promise@3.1.2",
       "es6-shim": "npm:es6-shim@0.33.13",
@@ -140,7 +140,7 @@ System.config({
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "constants": "github:jspm/nodelibs-constants@0.1.0",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
-      "randombytes": "npm:randombytes@2.0.2"
+      "randombytes": "npm:randombytes@2.0.3"
     },
     "npm:browserify-sign@4.0.0": {
       "bn.js": "npm:bn.js@4.10.5",
@@ -210,7 +210,7 @@ System.config({
       "inherits": "npm:inherits@2.0.1",
       "pbkdf2": "npm:pbkdf2@3.0.4",
       "public-encrypt": "npm:public-encrypt@4.0.0",
-      "randombytes": "npm:randombytes@2.0.2"
+      "randombytes": "npm:randombytes@2.0.3"
     },
     "npm:des.js@1.0.0": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
@@ -222,7 +222,7 @@ System.config({
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "miller-rabin": "npm:miller-rabin@4.0.0",
-      "randombytes": "npm:randombytes@2.0.2",
+      "randombytes": "npm:randombytes@2.0.3",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
     "npm:elliptic@6.2.3": {
@@ -284,9 +284,9 @@ System.config({
       "create-hash": "npm:create-hash@1.1.2",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "parse-asn1": "npm:parse-asn1@5.0.0",
-      "randombytes": "npm:randombytes@2.0.2"
+      "randombytes": "npm:randombytes@2.0.3"
     },
-    "npm:randombytes@2.0.2": {
+    "npm:randombytes@2.0.3": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
