@@ -11,7 +11,10 @@
  * To add a new task, simply add a new task file in that directory.
  */
 
-var gulp = require('gulp');
+var gulp = require('gulp-help')(require('gulp'), {
+  hideDepsMessage: true
+});
+
 var requireDir = require('require-dir');
 
 // Require all tasks in the 'tasks', including subfolders.

@@ -2,4 +2,4 @@
 
 var gulp = require('gulp');
 	
-gulp.task('default', ['development']);
+gulp.task('default', ['workflow:dev']);

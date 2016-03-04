@@ -1,10 +1,7 @@
 exports.config = {
-  baseUrl: 'http://localhost:9000',
-
   specs: [
     'src/app/**/*.e2e.ts'
   ],
-  exclude: [],
 
   framework: 'jasmine2',
 

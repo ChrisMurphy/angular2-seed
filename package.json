@@ -4,18 +4,18 @@
   "description": "Starting point for a blank ng2 application",
   "main": "./src/app/bootstrap.ts",
   "scripts": {
-    "start": "gulp development",
-    "development": "gulp development",
-    "production": "gulp production",
-    "build": "gulp build",
-    "postinstall": "jspm install && call tools/utils/install-typings",
-    "setup": "npm install -g ts-node live-server typings protractor karma-cli",
+    "start": "gulp workflow:dev",
+    "development": "gulp workflow:dev",
+    "production": "gulp workflow:prod",
+    "build.prod": "gulp build:prod",
+    "postinstall": "jspm install && call gulpfile.js/utils/install-typings",
+    "setup": "npm install -g ts-node live-server typings protractor karma-cli gulp",
     "test": "karma start karma.conf.js",
-    "e2e": "npm run webdriver-update && protractor protractor.conf.js",
-    "e2e.ci": "node tools/utils/concurrent-e2e-task",
-    "coverage": "node_modules/.bin/remap-istanbul -i coverage/coverage-final.json -o coverage -t html",
-    "webdriver-start": "webdriver-manager start",
-    "webdriver-update": "webdriver-manager update"
+    "e2e.dev": "gulp e2e:dev",
+    "e2e.prod": "gulp e2e:prod",
+    "e2e.ci.prod": "gulp e2e:ci:prod",
+    "e2e.ci.dev": "gulp e2e:ci:dev",
+    "coverage": "node_modules/.bin/remap-istanbul -i coverage/coverage-final.json -o coverage -t html"
   },
   "repository": {
     "type": "git",
@@ -36,13 +36,17 @@
   ],
   "homepage": "https://github.com/ChrisMurphy/angular2-seed",
   "devDependencies": {
-    "angular2": "2.0.0-beta.6",
+    "angular2": "2.0.0-beta.7",
+    "chalk": "^1.1.1",
     "del": "^2.0.2",
     "es6-shim": "^0.33.3",
     "gulp": "^3.9.0",
-    "gulp-environments": "^0.1.1",
+    "gulp-help": "^1.6.1",
     "gulp-html-replace": "^1.5.4",
     "gulp-htmlmin": "^1.1.4",
+    "gulp-inject": "^3.0.0",
+    "gulp-param": "^1.0.3",
+    "gulp-protractor": "^2.1.0",
     "gulp-sequence": "^0.4.1",
     "gulp-tslint": "^3.3.0",
     "gulp-tslint-stylish": "^1.1.1",
@@ -60,22 +64,22 @@
     "reflect-metadata": "0.1.2",
     "remap-istanbul": "^0.5.1",
     "require-dir": "^0.3.0",
-    "rxjs": "5.0.0-beta.0",
+    "rxjs": "5.0.0-beta.2",
     "systemjs": "^0.19.21",
     "ts-node": "^0.5.5",
     "typescript": "^1.7.5",
-    "zone.js": "0.5.14"
+    "zone.js": "0.5.15"
   },
   "jspm": {
     "directories": {
       "baseURL": "src"
     },
     "dependencies": {
-      "angular2": "npm:angular2@2.0.0-beta.6",
+      "angular2": "npm:angular2@2.0.0-beta.7",
       "es6-shim": "github:es-shims/es6-shim@^0.33.3",
       "reflect-metadata": "npm:reflect-metadata@0.1.2",
-      "rxjs": "npm:rxjs@5.0.0-beta.0",
-      "zone.js": "npm:zone.js@0.5.14"
+      "rxjs": "npm:rxjs@5.0.0-beta.2",
+      "zone.js": "npm:zone.js@0.5.15"
     },
     "devDependencies": {
       "ts": "github:frankwallis/plugin-typescript@^3.0.3",
