@@ -30,7 +30,7 @@ To build the production version only
 
 To run e2e protractor tests on production code (if there a server running code already)
 
-		npm run e2e.dev
+		npm run e2e.prod
 
 To run e2e protractor tests on production code (if there is no server running the code already)
 
