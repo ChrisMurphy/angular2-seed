@@ -19,7 +19,7 @@ Starting point for a blank Angular 2 application
 		
 4. To build the production version only
 
-		npm run build
+		npm run build.prod
 
 ## Technology Stack
 
