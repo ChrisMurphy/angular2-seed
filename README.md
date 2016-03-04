@@ -4,7 +4,7 @@ Starting point for a blank Angular 2 application
 [![devDependency Status](https://david-dm.org/ChrisMurphy/ng2-seed/dev-status.svg)](https://david-dm.org/ChrisMurphy/ng2-seed#info=devDependencies)
 [![Analytics](https://ga-beacon.appspot.com/UA-27347264-3/welcome-page)](https://github.com/igrigorik/ga-beacon)
 
-## Usage
+## General Usage
 
 1. To install project global dependencies
 
