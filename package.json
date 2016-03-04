@@ -11,10 +11,10 @@
     "postinstall": "jspm install && call gulpfile.js/utils/install-typings",
     "setup": "npm install -g ts-node live-server typings protractor karma-cli gulp",
     "test": "karma start karma.conf.js",
+    "e2e.ci.prod": "gulp e2e:ci:prod",
+    "e2e.ci.dev": "gulp e2e:ci:dev",    
     "e2e.dev": "gulp e2e:dev",
     "e2e.prod": "gulp e2e:prod",
-    "e2e.ci.prod": "gulp e2e:ci:prod",
-    "e2e.ci.dev": "gulp e2e:ci:dev",
     "coverage": "node_modules/.bin/remap-istanbul -i coverage/coverage-final.json -o coverage -t html"
   },
   "repository": {

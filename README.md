@@ -6,25 +6,35 @@ Starting point for a blank Angular 2 application
 
 ## General Usage
 
-1. To install project global dependencies
+To install project global dependencies
 
 		npm run setup
     
-2. To install project dependencies
+To install project dependencies
 
 		npm run install
 		
-3. To develop with the uncompiled version of the code and view in browser with live reload
+To develop with the uncompiled version of the code and view in browser with live reload
 
 		npm run development
 		
-4. To develop with the compiled version of the code and view in browser with live reload
+To develop with the compiled version of the code and view in browser with live reload
 
 		npm run production
 		
-5. To build the production version only
+To build the production version only
 
 		npm run build
+
+## Testing
+
+To run e2e protractor tests on production code (if there a server running code already)
+
+		npm run e2e.dev
+
+To run e2e protractor tests on production code (if there is no server running the code already)
+
+		npm run e2e.ci.prod
 
 ## Technology Stack
 
