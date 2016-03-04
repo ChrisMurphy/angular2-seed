@@ -7,7 +7,7 @@
     "start": "gulp workflow:dev",
     "development": "gulp workflow:dev",
     "production": "gulp workflow:prod",
-    "build.prod": "gulp build:prod",
+    "build": "gulp build:prod",
     "postinstall": "jspm install && call gulpfile.js/utils/install-typings",
     "setup": "npm install -g ts-node live-server typings protractor karma-cli gulp",
     "test": "karma start karma.conf.js",
