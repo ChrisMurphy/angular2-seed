@@ -5,19 +5,23 @@ Starting point for a blank Angular 2 application
 
 ## Usage
 
-1. Install project 
+1. To install project global dependencies
 
-        npm run setup
+		npm run setup
+    
+2. To install project dependencies
+
+		npm run install
 		
-2. To develop and view in browser with live reload
+3. To develop with the uncompiled version of the code and view in browser with live reload
 
 		npm run development
 		
-3. To build test the production version in browser
+4. To develop with the compiled version of the code and view in browser with live reload
 
 		npm run production
 		
-4. To build the production version only
+5. To build the production version only
 
 		npm run build.prod
 
