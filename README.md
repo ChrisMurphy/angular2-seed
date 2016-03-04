@@ -1,6 +1,8 @@
 # Angular 2 Seed Project
 Starting point for a blank Angular 2 application
 
+[![devDependency Status](https://david-dm.org/ChrisMurphy/ng2-seed/dev-status.svg)](https://david-dm.org/ChrisMurphy/ng2-seed#info=devDependencies)
+
 ## Usage
 
 1. Install project 
@@ -22,7 +24,7 @@ Starting point for a blank Angular 2 application
 ## Technology Stack
 
 ### Application
-* angular 2.0.0 beta 6
+* angular 2.0.0 beta 7
 * typescript
 
 ### Build and Dependecy Management
