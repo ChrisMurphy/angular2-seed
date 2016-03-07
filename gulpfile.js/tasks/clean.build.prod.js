@@ -4,10 +4,9 @@ var config = require('../config'),
 	gulp = require('gulp'),
 	del = require('del');
 
-gulp.task('clean:prod', 'Clean production build files.',
+gulp.task('clean:build:prod', 'Clean production build files.',
 	del.bind(
 		null, 
-		[config.folders.dist], 
-		{ dot: true }
+		[config.folders.dist]
 	)
 );

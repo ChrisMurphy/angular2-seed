@@ -12,7 +12,7 @@
     "setup": "npm install -g ts-node live-server typings protractor karma-cli gulp",
     "test": "karma start karma.conf.js",
     "e2e.ci.prod": "gulp e2e:ci:prod",
-    "e2e.ci.dev": "gulp e2e:ci:dev",    
+    "e2e.ci.dev": "gulp e2e:ci:dev",
     "e2e.dev": "gulp e2e:dev",
     "e2e.prod": "gulp e2e:prod",
     "coverage": "node_modules/.bin/remap-istanbul -i coverage/coverage-final.json -o coverage -t html"
@@ -59,7 +59,7 @@
     "karma-coverage": "^0.5.3",
     "karma-jasmine": "^0.3.7",
     "karma-jspm": "^2.0.2",
-    "live-server": "^0.8.1",
+    "live-server": "^0.9.2",
     "protractor": "^3.1.1",
     "reflect-metadata": "0.1.2",
     "remap-istanbul": "^0.5.1",

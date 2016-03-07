@@ -9,6 +9,6 @@ gulp.task('build:js:prod', 'Build production ready JavaScript (SFX bundle).', fu
   return jspm.bundleSFX(
     config.files.bootstrapModule,
     path.join(config.folders.dist, config.files.compiledModule),
-    { sourceMaps: false, minify: true }
+    { sourceMaps: false, minify: true, mangle: true }
   );
 });

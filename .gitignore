@@ -8,6 +8,9 @@ npm-debug.log
 ##Typings
 src/typings/**
 
+##Development Code
+dev/**
+
 ##Distribution Code
 dist/**
 
