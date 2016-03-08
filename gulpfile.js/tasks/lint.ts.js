@@ -13,7 +13,7 @@ var source = [
   '!' + path.join(config.dependencyPaths.typings, config.globs.all)
 ];
 
-gulp.task('tslint', 'Static analysis of TypeScript code for errors.', function () {
+gulp.task('lint:ts', 'Static analysis of TypeScript code for errors.', function () {
   return gulp.src(source)
     .pipe(tslint())
     .pipe(tslint.report(stylish, {
