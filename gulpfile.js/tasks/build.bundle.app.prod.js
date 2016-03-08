@@ -5,7 +5,7 @@ var config = require('../config'),
     jspm = require('jspm'),
     path = require('path');
 
-gulp.task('build:js:prod', 'Build production ready JavaScript (SFX bundle).', function() {
+gulp.task('build:bundle:app:prod', 'Build production ready JavaScript (SFX bundle).', function() {
   return jspm.bundleSFX(
     config.files.bootstrapModule,
     path.join(config.folders.dist, config.files.compiledModule),

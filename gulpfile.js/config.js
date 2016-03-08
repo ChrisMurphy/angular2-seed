@@ -48,7 +48,7 @@ module.exports = new function () {
     development: {
       port: 9000, // Set the server port. Defaults to 8080. 
       root: this.folders.dev, // Set root directory that's being server. Defaults to cwd. 
-      mount: [['/src', 'src']], // Mount a directory to a route. 
+      //mount: [['/src', 'src']], // Mount a directory to a route. 
       open: false,
       logLevel: 2
     },
