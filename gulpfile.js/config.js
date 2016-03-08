@@ -20,14 +20,16 @@ module.exports = new function () {
   this.globs = {
     all: '**/*',
     typescript: '**/*.ts',
-    e2eTest: path.join(this.folders.src, 'app/**/*.e2e.ts'),
-    specTest: path.join(this.folders.src, 'app/**/*.spec.ts')
+    e2eTest: 'app/**/*.e2e.ts',
+    specTest: 'app/**/*.spec.ts'
   };
 
   this.typescript = {
     allSourceFiles: path.join(this.folders.src, this.globs.typescript),
     typingsEntryPoint: path.join(this.folders.src, 'typings/browser.d.ts'),
-    projectFile: path.join(this.folders.src, 'tsconfig.json')
+    projectFile: path.join(this.folders.src, 'tsconfig.json'),
+    e2eTest: path.join(this.folders.src, this.globs.e2eTest),
+    specTest: path.join(this.folders.src, this.globs.specTest)    
   }
 
   this.files = {
