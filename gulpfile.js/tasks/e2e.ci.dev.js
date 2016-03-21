@@ -3,5 +3,5 @@ var gulp = require('gulp'),
   concurrent = require('../utils/concurrent-dependent-process');
 
 gulp.task('e2e:ci:dev', function () {
-  concurrent('gulp serve:dev', 'gulp e2e:dev');
+  concurrent('gulp serve:raw', 'gulp e2e:dev');
 });

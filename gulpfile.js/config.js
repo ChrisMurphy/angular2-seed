@@ -41,7 +41,7 @@ module.exports = new function () {
 
   this.server = {
     raw: {
-      port: 8080, // Set the server port. Defaults to 8080. 
+      port: 9000, // Set the server port. Defaults to 8080. 
       root: this.folders.src, // Set root directory that's being server. Defaults to cwd. 
       open: true
     },
