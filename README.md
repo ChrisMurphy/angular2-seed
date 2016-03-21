@@ -38,7 +38,7 @@ To run e2e protractor tests on production code (if there is no server running th
 ## Technology Stack
 
 ### Application
-* angular 2.0.0 beta 8
+* angular 2.0.0 beta 11
 * typescript
 
 ### Build and Dependecy Management
