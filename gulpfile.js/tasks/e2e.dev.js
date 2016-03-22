@@ -8,7 +8,7 @@ gulp.task('e2e:dev', 'Run e2e tests using development code.', ['webdriver:update
   gulp.src(['src/app/**/*.e2e.ts'], { read:false })
     .pipe(protractor({
 			configFile: config.files.baseProtractor,
-			args: ['--baseUrl', 'http://' + 'localhost' + ':' + config.server.development.port]      
+			args: ['--baseUrl', 'http://' + 'localhost' + ':' + config.server.raw.port]      
     })).on('error', function(e) {
 			console.log(e);
 			done();
