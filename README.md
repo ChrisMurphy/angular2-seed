@@ -11,7 +11,7 @@ To install project global dependencies
     
 To install project dependencies
 
-		npm install
+		npm run install
 		
 To develop with the uncompiled version of the code and view in browser with live reload
 
