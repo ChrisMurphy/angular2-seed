@@ -36,7 +36,7 @@
   ],
   "homepage": "https://github.com/ChrisMurphy/angular2-seed",
   "devDependencies": {
-    "angular2": "^2.0.0-beta.11",
+    "angular2": "^2.0.0-beta.13",
     "chalk": "^1.1.1",
     "del": "^2.0.2",
     "es6-promise": "^3.1.2",
@@ -71,14 +71,14 @@
     "systemjs": "^0.19.21",
     "ts-node": "^0.5.5",
     "typescript": "^1.7.5",
-    "zone.js": "^0.6.4"
+    "zone.js": "^0.6.8"
   },
   "jspm": {
     "directories": {
       "baseURL": "src"
     },
     "dependencies": {
-      "angular2": "npm:angular2@^2.0.0-beta.11",
+      "angular2": "npm:angular2@^2.0.0-beta.13",
       "es6-promise": "npm:es6-promise@^3.1.2",
       "es6-shim": "github:es-shims/es6-shim@^0.35.0",
       "reflect-metadata": "npm:reflect-metadata@0.1.2",
