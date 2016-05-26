@@ -1,5 +1,5 @@
 /// <reference path="../../../typings/browser.d.ts" />
-import {it, describe, expect, beforeEach} from 'angular2/testing';
+import {it, describe, expect, beforeEach} from '@angular/core/testing';
 import {App} from './app.component';
 
 describe('Application', () => {
