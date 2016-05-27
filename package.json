@@ -112,12 +112,24 @@
       "@angular/platform-browser": "npm:@angular/platform-browser@2.0.0-rc.1",
       "process": "github:jspm/nodelibs-process@^0.2.0-alpha",
       "rxjs": "npm:rxjs@5.0.0-beta.6",
-      "zone.js": "npm:zone.js@^0.6.12"
+      "zone.js": "npm:zone.js@^0.6.6"
     },
     "overrides": {
+      "npm:rxjs@5.0.0-beta.6": {
+        "main": "bundles/Rx.js",
+        "meta": {
+          "bundles/Rx.js": {
+            "typings": "Rx.d.ts"
+          },
+          "*.js": {
+            "typings": true
+          }
+        }
+      },
       "npm:@angular/common@2.0.0-rc.1": {
         "meta": {
-          "src/*.js": {
+          "*.js": {
+            "typings": true,
             "deps": [
               "reflect-metadata",
               "zone.js"
@@ -127,7 +139,8 @@
       },
       "npm:@angular/compiler@2.0.0-rc.1": {
         "meta": {
-          "src/*.js": {
+          "*.js": {
+            "typings": true,
             "deps": [
               "reflect-metadata",
               "zone.js"
@@ -137,7 +150,8 @@
       },
       "npm:@angular/core@2.0.0-rc.1": {
         "meta": {
-          "src/*.js": {
+          "*.js": {
+            "typings": true,
             "deps": [
               "reflect-metadata",
               "zone.js"
@@ -147,7 +161,8 @@
       },
       "npm:@angular/http@2.0.0-rc.1": {
         "meta": {
-          "src/*.js": {
+          "*.js": {
+            "typings": true,
             "deps": [
               "reflect-metadata",
               "zone.js"
@@ -157,7 +172,8 @@
       },
       "npm:@angular/platform-browser-dynamic@2.0.0-rc.1": {
         "meta": {
-          "src/*.js": {
+          "*.js": {
+            "typings": true,
             "deps": [
               "reflect-metadata",
               "zone.js"
@@ -167,7 +183,8 @@
       },
       "npm:@angular/platform-browser@2.0.0-rc.1": {
         "meta": {
-          "src/*.js": {
+          "*.js": {
+            "typings": true,
             "deps": [
               "reflect-metadata",
               "zone.js"
@@ -177,7 +194,8 @@
       },
       "npm:@angular/router@2.0.0-rc.1": {
         "meta": {
-          "src/*.js": {
+          "*.js": {
+            "typings": true,
             "deps": [
               "reflect-metadata",
               "zone.js"

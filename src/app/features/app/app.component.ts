@@ -1,7 +1,7 @@
-import {Component} from '@angular/core';
-import {RouteConfig, ROUTER_DIRECTIVES} from '@angular/router-deprecated';
+import {Component, OnInit} from '@angular/core';
+import {Routes, Route, Router, ROUTER_DIRECTIVES} from '@angular/router';
 
-import { Home } from '../home/home.component';
+import {Home} from '../home/home.component';
 
 @Component({
 	selector: 'app',
@@ -10,14 +10,17 @@ import { Home } from '../home/home.component';
 	`,
 	directives : [ROUTER_DIRECTIVES]
 })
-@RouteConfig([
-	{ path: '/', redirectTo: ['/Home'] },
-	{ path: '/Home', component: Home, name: 'Home' }
+@Routes([
+	new Route({path: '/home', component: Home})
 ])
-export class App {
-  public message: string;
+export class App implements OnInit {
+  public message: number;
 
-  constructor() {
+  constructor(private router: Router) {
     this.message = 'test';
   }
+	
+	ngOnInit() {
+		this.router.navigate(['/home']);
+	}
 }

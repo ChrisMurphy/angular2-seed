@@ -6,11 +6,14 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
     "noEmitOnError": true,
     "sourceMap": true,
+    "typeCheck": true,
     "rootDir": "./"
   },
   "exclude": [
+    "node_modules",
     "jspm_packages",
     "typings/main.d.ts",
     "typings/main"
